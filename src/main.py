@@ -8,8 +8,8 @@ app = FastAPI(
     description = 'Prediction Water Potability'
 )
 
-with open(r'D:\دراسة\water test\model.pkl', 'rb') as f:
-    model = pickle.load(f)
+with open('../model.pkl', 'rb') as f:
+     model = pickle.load(f)
 
 @app.get('/')
 def index():
